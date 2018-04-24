@@ -132,7 +132,7 @@ def cal(op1, op2, op):
     if op == '*': 
         return op1 * op2
     if op == '/': 
-        return op1 * 1.0 / op2
+        return int(op1 / op2)
 
 
 def clear_space(Str):
