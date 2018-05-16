@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	int sliver = (int)(n * 0.3) - (int)(n * 0.1);
+	int bronze = (int)(n * 0.6) - (int)(n * 0.3);
+	int fe = n - (int)(n * 0.6);
+	int newFe = n - ceil(n - 0.6);
+	int newBronze = ceil(n * 0.6) - ceil(n * 0.3);
+	int newSliver = ceil(n * 0.3) - ceil(n * 0.1);
+	printf("%d %d %d\n", sliver - newSliver, newBronze - bronze, fe - newFe);
+
+	return 0;
+}
